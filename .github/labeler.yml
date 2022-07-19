@@ -1,0 +1,15 @@
+# https://github.com/actions/labeler
+
+name: PR Labels
+on:
+- pull_request
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Add labels
+      uses: actions/labeler@4.0.0
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+        configuration-path: .github/workflows/config/labeler.yml
