@@ -7,4 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test
-        run: /bin/bash .github/workflows/test.sh
+        run: |
+          echo "This is a test!"

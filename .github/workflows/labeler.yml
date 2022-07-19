@@ -2,7 +2,7 @@
 
 name: PR Labels
 on:
-- workflow_run:
+  workflow_run:
     workflows: ["Review PR"]
     types:
       - completed
