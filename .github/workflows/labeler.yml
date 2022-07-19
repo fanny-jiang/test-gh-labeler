@@ -2,7 +2,10 @@
 
 name: PR Labels
 on:
-- pull_request
+- workflow_run:
+    workflows: ["Review PR"]
+    types:
+      - completed
 
 jobs:
   apply:
