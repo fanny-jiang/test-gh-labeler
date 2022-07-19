@@ -1,0 +1,10 @@
+name: Review PR
+on:
+  pull_request:
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test
+        run: /bin/bash .github/workflows/test.sh
