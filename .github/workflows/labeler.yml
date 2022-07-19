@@ -1,11 +1,8 @@
 # https://github.com/actions/labeler
-
 name: PR Labels
 on:
   workflow_run:
     workflows: ["Review PR"]
-    types:
-      - completed
 
 jobs:
   apply:
