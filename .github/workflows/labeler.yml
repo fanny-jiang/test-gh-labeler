@@ -1,15 +1,14 @@
 # https://github.com/actions/labeler
-
 name: PR Labels
 on:
-  workflow_run:
-    workflows: ["Review PR"]
-    types:
-      - completed
+- pull_request_target
 
 jobs:
   apply:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
     steps:
     - name: Add labels
       uses: actions/labeler@v4
