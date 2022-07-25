@@ -1,4 +1,4 @@
 # README
 
-# Spork
+## Spork
 Fork and Spoon
