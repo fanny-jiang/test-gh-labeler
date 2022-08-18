@@ -1,3 +1,9 @@
 # Configuration for labeler - https://github.com/actions/labeler
 readme:
   - README.md
+integration/disk:
+  - disk/**/*
+integration/http_check:
+  - http_check/**/*
+integration/postgres:
+  - postgres/**/*
